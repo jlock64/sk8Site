@@ -1,0 +1,18 @@
+/** {
+  font-family: font-family: 'Source Sans Pro', sans-serif;
+}*/
+
+body {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('images/bg.jpg');
+
+/*Always set your container to margin: 0 auto to center contents*/
+.content-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fa fa-circle {
+  color: #fff;
+}
