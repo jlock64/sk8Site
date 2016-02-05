@@ -249,6 +249,15 @@ nav > ul > li {
   vertical-align: top;
 }
 
+.skater-image {
+  box-shadow: 0px 3px grey;
+}
+.skater-image:hover {
+  opacity: .8;
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
 .left-col .skater-image:first-child {
   position: relative;
   display: inline-block;
@@ -320,6 +329,63 @@ nav > ul > li {
 }
 
 
+
+/************  SKATEBOARD STYLES  *************/
+
+.skateboard-wrapper {
+  margin-top: 25px;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  box-shadow: 3px solid grey;
+}
+
+.skateboards {
+  display: inline-block;
+  padding-top: 2%;
+}
+
+.skateboards img {
+  width: 65%;
+}
+.skateboards img:hover {
+  transform: scaleX(1.2);
+}
+
+
+
+/************  FOOTER STYLES  *************/
+
+footer {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #fff;
+}
+
+
+.footer-left-col {
+  display: inline-block;
+  width: 49%;
+  border: 1px solid orange
+}
+footer h3 {
+  margin: 0;
+  padding: 15px 0 0 15px;
+  font-weight: 400;
+  font-family: Tahoma;
+}
+footer p {
+  padding: 0px 0 0 15px;
+}
+
+.footer-right-col {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  border: 1px solid orange;
+
+}
 
 
 
