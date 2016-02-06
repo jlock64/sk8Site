@@ -190,7 +190,7 @@ nav > ul > li {
   margin-right: 5px;
   vertical-align: top; /* use this rule whenver using inline-block  */
   display: inline-block;
-  width: 28.3%;
+  width: 28.6%;
   height: 230px;
   padding: 15px;
   background-color: #fff;
@@ -213,23 +213,81 @@ nav > ul > li {
 }
 
 .news-story p {
-  font-size: 11px;
-  font-weight: 600;
+    font-size: 11px;
+    font-weight: 100;
+    font-family: Tahoma;
+    color: #888;
+    line-height: 1.5;
+}
+.news-story:last-child p {
+  padding-top: 7px;
 }
 
 .news-story a {
   display: block;
   text-align: center;
-  color: red;
+  color: #B63233;
   text-decoration: none;
   font-family: Arial;
+  font-size: 12px;
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 
 
 
 /************  SKATER BIO STYLES  *************/
 
+.arrow {
+  position: absolute;
+  background-color: #B4292E;
+  width: 20%;
+  height: 60px;
+  top: 33px;
+  left: -189px;
+  /*box-shadow: 0px 3px grey;*/
+  text-align: center;
+}
+
+.arrow2 {
+  position: absolute;
+  background-color: grey;
+  width: 20%;
+  height: 60px;
+  top: 36px;
+  left: -189px;
+}
+
+.arrow p {
+  color: #f8f6f7;
+  text-transform: uppercase;
+  font-family: arial;
+  padding-top: 6px;
+  padding-left: 10px;
+}
+
+.arrow-tip {
+  position: absolute;
+  width: 0;
+  border-top: 31px solid transparent;
+  border-bottom: 31px solid transparent;
+  border-left: 20px solid #B4292E;
+  top: 32px;
+  left: -35px;
+}
+
+.arrow-tip2 {
+  position: absolute;
+  width: 0;
+  border-top: 31px solid transparent;
+  border-bottom: 31px solid transparent;
+  border-left: 20px solid grey;
+  top: 35px;
+  left: -35px;
+}
+
 .skater-wrapper {
+  position: relative;
   margin-top: 25px;
   width: 100%;
   height: 300px;
@@ -313,7 +371,7 @@ nav > ul > li {
   background-repeat: no-repeat;
   background-size: 238%;
   background-position-x: -242px;
-  width: 97%;
+  width: 99.2%;
   height: 96%;
   border: 3px solid #fff;
 }
@@ -333,24 +391,26 @@ nav > ul > li {
 /************  SKATEBOARD STYLES  *************/
 
 .skateboard-wrapper {
+  position: relative;
   margin-top: 25px;
   text-align: center;
   width: 100%;
   height: 200px;
-  background-color: #fff;
-  box-shadow: 3px solid grey;
+  background-color: #FDFDFD;
+  box-shadow: 0px 3px grey;
 }
 
 .skateboards {
   display: inline-block;
   padding-top: 2%;
+  padding-left: 1%;
 }
 
 .skateboards img {
   width: 65%;
 }
 .skateboards img:hover {
-  transform: scaleX(1.2);
+  transform: rotateY(45deg);
 }
 
 
@@ -359,36 +419,103 @@ nav > ul > li {
 
 footer {
   margin-top: 25px;
+  margin-bottom: 50px;
   width: 100%;
-  background-color: #fff;
+  height: 250px;
+  background-color: #FBFBFB;
+  box-shadow: 0px 3px grey;
 }
 
-
-.footer-left-col {
-  display: inline-block;
-  width: 49%;
-  border: 1px solid orange
-}
 footer h3 {
   margin: 0;
   padding: 15px 0 0 15px;
   font-weight: 400;
   font-family: Tahoma;
+  color: #696965;
 }
 footer p {
   padding: 0px 0 0 15px;
+  font-size: 12px;
+  font-weight: 100;
+  font-family: Tahoma;
+  color: #696965;
+  line-height: 1.5;
+}
+
+footer li {
+  color: #787878;
+  font-size: 25px;
+}
+footer li:hover {
+  color: #000;
+}
+
+.footer-left-col {
+  display: inline-block;
+  width: 49%;
+}
+
+.footer-left-col ul {
+  margin: 0;
+  padding-left: 15px;
+  list-style-type: none;
+}
+
+.footer-left-col li {
+  display: inline-block;
 }
 
 .footer-right-col {
   display: inline-block;
   vertical-align: top;
   width: 49%;
-  border: 1px solid orange;
-
 }
 
+input:nth-child(2), input:nth-child(3) {
+  margin-top: 10px;
+}
 
+form {
+  padding: 15px 0 0 15px;
+}
 
+form .name, form .email {
+  width: 90%;
+  border-top: 3px solid #AEAEAE;
+  border-left: 3px solid #AEAEAE;
+  border-right: 1px solid #AEAEAE;
+  border-bottom: 1px solid #AEAEAE;
+  font-size: 11px;
+  font-family: Geneva;
+  padding: 2%;
+  color: #C4C4C4;
+}
+
+form .message {
+  width: 90%;
+  border-top: 3px solid #AEAEAE;
+  border-left: 3px solid #AEAEAE;
+  border-right: 1px solid #AEAEAE;
+  border-bottom: 1px solid #AEAEAE;
+  font-size: 11px;
+  font-family: Geneva;
+  padding: 2%;
+  padding-bottom: 50px;
+  color: #C4C4C4;
+}
+
+footer button {
+  width: 55%;
+  background-color: #B4292E;
+  text-transform: uppercase;
+  color: #F8F6F7;
+  font-size: 12px;
+  font-weight: 900;
+  padding: 7px;
+  margin-left: 40%;
+  margin-top: 6%;
+  border: none;
+}
 
 
 
