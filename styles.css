@@ -15,10 +15,10 @@ body {
 }
 
 
+
 /******************************
 SOCIAL BAR STYLES
 *******************************/
-
 
 .social-bar {
   margin-top: 2px;
@@ -89,10 +89,10 @@ SOCIAL BAR STYLES
 }
 
 
+
 /*********************************
 Nav Bar Styles
 **********************************/
-
 
 nav {
   margin-top: 10px;
@@ -189,7 +189,6 @@ nav > ul > li {
 /**********************************
 News Headline Styles
 ***********************************/
-
 
 .headlines {
   width: 100%;
@@ -467,6 +466,7 @@ SKATEBOARD STYLES
 }
 
 
+
 /**********************************
 FOOTER STYLES
 **********************************/
@@ -570,22 +570,3 @@ footer button {
   margin-top: 6%;
   border: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.fa fa-circle {
-  font-size: 6px;
-  color: #C2BEBB;
-  text-shadow: 1px 1px #111;
-}*/
