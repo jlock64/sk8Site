@@ -1,18 +1,24 @@
-@media (min-width: 761px) and (max-width: 1024px){
+@media (min-width: 761px) and (max-width: 1250px){
 
   .content-container {
-    width: 80%;
+    width: 66%;
   }
 
   nav > ul > li {
-    width: 23.7%;
+    width: 23.67%;
+  }
+
+  nav a {
+    font-size: .63em;
   }
 
   .news-story {
     width: 28.7%;
-    padding: 1.8%;
+    padding: 1.7%;
   }
 
   .left-col .skater-image:first-child {
-    width: 47%;
+    width: 46.1%;
   }
+
+}
