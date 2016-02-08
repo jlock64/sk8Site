@@ -498,7 +498,7 @@ SKATEBOARD STYLES
 .skateboards {
   display: inline-block;
   padding-top: 2%;
-  padding-left: 1%;
+  /*padding-left: 1%;*/
 }
 
 .skateboards img {
@@ -618,14 +618,14 @@ form .message {
 }
 
 footer button {
-  width: 55%;
+  width: 40%;
   background-color: #B4292E;
   text-transform: uppercase;
   color: #F8F6F7;
   font-size: 12px;
   font-weight: 900;
   padding: 7px;
-  margin-left: 40%;
+  margin-left: 55%;
   margin-top: 6%;
   border: none;
 }

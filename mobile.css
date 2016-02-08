@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (min-width: 380px) and (max-width: 760px){
 
   .content-container {
     width: 100%;
@@ -122,14 +122,23 @@ NAV BAR
   height: auto;
 }
 
-.skateboards {
-  padding-left: 2.4%;
-}
-
 footer {
-  height: 270px;
+  height: auto;
+}
+.footer-left-col {
+  width: 100%;
+}
+.footer-right-col {
+  width: 100%;
+}
+
+button {
+  margin-bottom: 5%;
 }
 
 
 
+
+
+/******************* Closing Tage *******************/
 }
