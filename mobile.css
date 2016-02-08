@@ -1,0 +1,135 @@
+@media (max-width: 480px) {
+
+  .content-container {
+    width: 100%;
+  }
+
+
+  /****************************
+  SOCIAL BAR
+  *****************************/
+  .social-bar {
+    width: 100%;
+  }
+  .subscribe {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .subscribe a {
+    font-size: 1.5em;
+    font-weight: bolder;
+  }
+  .subscribe span {
+    display: none;
+  }
+  .vertical-dots {
+    display: none;
+  }
+  .social-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  .social-wrapper li {
+    box-shadow: none;
+  }
+  .social-wrapper img {
+    /*width: 72px;
+    height: 72px;*/
+  }
+
+
+
+  /****************************
+NAV BAR
+  *****************************/
+  nav a {
+    font-size: 1.5em;
+  }
+  nav ul li {
+    width: 100%;
+    margin-top: 1.5%;
+  }
+
+  .slider-buttons {
+    display: none;
+  }
+
+
+
+  /**********************************
+  News Headline Styles
+  ***********************************/
+  .news-story {
+    margin-top: 2%;
+    width: 100%;
+    display: block;
+    /*height: 100px;*/
+  }
+
+
+
+  /**********************************
+  SKATER BIO STYLES
+  ***********************************/
+  .arrow, .arrow2, .arrow-tip, .arrow-tip2 {
+    display: none;
+  }
+
+  .left-col, .right-col {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  .right-col {
+    height: 200px;
+    margin-left: 0;
+  }
+
+.left-col .skater-image:first-child, .left-col .skater-image:nth-child(2), .left-col .skater-image:nth-child(3), .right-col .skater-image:first-child {
+    width: 100%;
+    display: block;
+    margin-top: 2%;
+  }
+
+  .left-col .skater-image:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .left-col .skater-image:nth-child(3) {
+    background-position-y: -20px;
+  }
+
+  .right-col .skater-image:first-child {
+    background-size: 147%;
+    background-position-x: -175px;
+  }
+
+.skater-wrapper span {
+    animation-play-state: paused;
+  }
+
+  .left-col .skater-image span {
+    padding: 15%;
+  }
+
+  /*.left-col .skater-image:nth-child(2) {
+    width: 100%;
+  }*/
+
+.skateboard-wrapper {
+  height: auto;
+}
+
+.skateboards {
+  padding-left: 2.4%;
+}
+
+footer {
+  height: 270px;
+}
+
+
+
+}
