@@ -137,7 +137,66 @@ nav > ul > li {
   Slider Styles
 ************************************/
 
-.slider-holder {
+#slider {
+  position: relative;
+  width: 98%;
+  max-width: 800px;
+  overflow: hidden;
+  border: 7px solid #fff;
+  box-shadow: 0px 3px grey;
+}
+
+/******  PAUSE BUTTON  *******/
+#slider:after {
+  content: "||";
+  position: absolute;
+  font-size: 10em;
+  z-index: 12;
+  color: rgba(255,255,255, 0);
+  left: 46%;
+  top: 15%;
+  transition: 1s all ease-in-out;
+}
+#slider:hover:after {
+  color: rgba(255,255,255, 0.6);
+}
+
+#figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;  /* This sucks all the air out of the div container surrounding the image*/
+  text-align: left; /* Addressing a bug in Win Safari 5 */
+  animation: 10s slide infinite;
+}
+#figure:hover {
+  animation-play-state: paused;
+}
+
+#figure img {
+  width: 20%; /*100%/5 = 20%*/
+  height: auto;
+  float: left; /* Addressing a bug in Win Safari 5 */
+}
+
+
+@keyframes slide {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; } /*5% in there to account for slide*/
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+
+
+
+/*.slider-holder {
   position: relative;
   border: 7px solid #fff;
   height: 230px;
@@ -182,7 +241,7 @@ nav > ul > li {
 }
 .slider-buttons span:hover {
   color: red;
-}
+}*/
 
 
 
