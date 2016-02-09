@@ -1,0 +1,17 @@
+/******************** GENERAL STYLES *********************/
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-size: cover;
+  background-image: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)),
+        url('../images/bg.jpg');
+}
+
+/*Always set your container to margin: 0 auto to center contents*/
+.content-container {
+    width: 52%;
+    margin: 0 auto;
+}

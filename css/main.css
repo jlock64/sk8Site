@@ -1,134 +1,10 @@
-/****************************
-MOBILE DEVICE MEDIA QUERY
-*****************************/
-@media (min-width: 0px) and (max-width: 760px) {
-  .content-container {
-    width: 100%; }
-  /****************************
-  SOCIAL BAR
-  *****************************/
-  .social-bar {
-    width: 100%; }
-  .subscribe {
-    width: 100%;
-    margin-top: 15px;
-    text-align: center; }
-  .subscribe a {
-    font-size: 1.5em;
-    font-weight: bolder; }
-  .subscribe span {
-    display: none; }
-  .vertical-dots {
-    display: none; }
-  .social-wrapper {
-    width: 100%;
-    text-align: center; }
-  .social-wrapper li {
-    box-shadow: none; }
-  .social-wrapper img {
-    /*width: 72px;
-    height: 72px;*/ }
-  /****************************
-NAV BAR
-  *****************************/
-  nav a {
-    font-size: 1.5em; }
-  nav ul li {
-    width: 100%;
-    margin-top: 1.5%; }
-  .slider-buttons {
-    display: none; }
-  /**********************************
-  News Headline Styles
-  ***********************************/
-  .news-story {
-    margin-top: 2%;
-    width: 100%;
-    display: block;
-    /*height: 100px;*/ }
-  /**********************************
-  SKATER BIO STYLES
-  ***********************************/
-  .arrow, .arrow2, .arrow-tip, .arrow-tip2 {
-    display: none; }
-  .left-col, .right-col {
-    width: 100%;
-    display: block;
-    height: auto; }
-  .right-col {
-    height: 200px;
-    margin-left: 0; }
-  .left-col .skater-image:first-child, .left-col .skater-image:nth-child(2), .left-col .skater-image:nth-child(3), .right-col .skater-image:first-child {
-    width: 100%;
-    display: block;
-    margin-top: 2%; }
-  .left-col .skater-image:nth-child(2) {
-    margin-left: 0; }
-  .left-col .skater-image:nth-child(3) {
-    background-position-y: -20px; }
-  .right-col .skater-image:first-child {
-    background-size: 147%;
-    background-position-x: -175px; }
-  .skater-wrapper span {
-    animation-play-state: paused; }
-  .left-col .skater-image span {
-    padding: 15%; }
-  /*.left-col .skater-image:nth-child(2) {
-    width: 100%;
-  }*/
-  .skateboard-wrapper {
-    height: auto; }
-  footer {
-    height: auto; }
-  .footer-left-col {
-    width: 100%; }
-  .footer-right-col {
-    width: 100%; }
-  button {
-    margin-bottom: 5%; }
-  /******************* Closing Tage *******************/ }
-
-/****************************
-TABLET MEDIA QUERY
-*****************************/
-@media (min-width: 761px) and (max-width: 1250px) {
-  .content-container {
-    width: 66%; }
-  nav > ul > li {
-    width: 23.67%; }
-  nav a {
-    font-size: .63em; }
-  .news-story {
-    width: 28.6%;
-    padding: 1.7%; }
-  .left-col .skater-image:first-child {
-    width: 46.1%; } }
-
-/****************************
-DESKTOP MEDIA QUERY
-*****************************/
-@media screen and (min-width: 1251px) {
-  .content-container {
-    width: 49%; }
-  nav > ul > li {
-    width: 23.7%; }
-  /*.headlines {
-  text-align: center;
-}*/
-  .news-story {
-    width: 27.5%; }
-  .left-col .skater-image:first-child {
-    width: 47.5%; }
-  .left-col .skater-image:nth-child(2) {
-    width: 47.5%; }
-  /****************** CLOSING CURLY BRACE ********************/ }
-
+/******************** GENERAL STYLES *********************/
 * {
   font-family: 'Roboto', sans-serif; }
 
 body {
   background-size: cover;
-  background-image: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)), url("images/bg.jpg"); }
+  background-image: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)), url("../images/bg.jpg"); }
 
 /*Always set your container to margin: 0 auto to center contents*/
 .content-container {
@@ -303,28 +179,6 @@ nav > ul > li {
   100% {
     left: -400%; } }
 
-/*.slider-holder {
-  position: relative;
-  border: 7px solid #fff;
-  height: 230px;
-  box-shadow: 0px 3px grey;
-}
-
-.slider-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(250, 250, 250, 0.15);
-}
-
-#slider-image1{
-  width: 100%;
-  height: 230px;
-}*/
 .logo-wrapper {
   position: absolute;
   top: 28px;
@@ -477,7 +331,7 @@ SKATER BIO STYLES
 .left-col .skater-image:first-child {
   position: relative;
   display: inline-block;
-  background-image: url(images/sk8er-4.png);
+  background-image: url(../images/sk8er-4.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 48%;
@@ -500,7 +354,7 @@ SKATER BIO STYLES
 .left-col .skater-image:nth-child(2) {
   margin-left: 4px;
   display: inline-block;
-  background-image: url(images/sk8er-3.png);
+  background-image: url(../images/sk8er-3.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 120%;
@@ -512,7 +366,7 @@ SKATER BIO STYLES
 .left-col .skater-image:nth-child(3) {
   margin-top: 8px;
   display: inline-block;
-  background-image: url(images/sk8er-1.png);
+  background-image: url(../images/sk8er-1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -75px;
@@ -523,7 +377,7 @@ SKATER BIO STYLES
 .right-col .skater-image:first-child {
   position: relative;
   display: inline-block;
-  background-image: url(images/sk8er-2.png);
+  background-image: url(../images/sk8er-2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 223%;
@@ -667,3 +521,129 @@ footer button {
   margin-left: 55%;
   margin-top: 6%;
   border: none; }
+
+/****************************
+MOBILE DEVICE MEDIA QUERY
+*****************************/
+@media (min-width: 0px) and (max-width: 760px) {
+  .content-container {
+    width: 100%; }
+  /****************************
+  SOCIAL BAR
+  *****************************/
+  .social-bar {
+    width: 100%; }
+  .subscribe {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center; }
+  .subscribe a {
+    font-size: 1.5em;
+    font-weight: bolder; }
+  .subscribe span {
+    display: none; }
+  .vertical-dots {
+    display: none; }
+  .social-wrapper {
+    width: 100%;
+    text-align: center; }
+  .social-wrapper li {
+    box-shadow: none; }
+  .social-wrapper img {
+    /*width: 72px;
+    height: 72px;*/ }
+  /****************************
+NAV BAR
+  *****************************/
+  nav a {
+    font-size: 1.5em; }
+  nav ul li {
+    width: 100%;
+    margin-top: 1.5%; }
+  .slider-buttons {
+    display: none; }
+  /**********************************
+  News Headline Styles
+  ***********************************/
+  .news-story {
+    margin-top: 2%;
+    width: 100%;
+    display: block;
+    /*height: 100px;*/ }
+  /**********************************
+  SKATER BIO STYLES
+  ***********************************/
+  .arrow, .arrow2, .arrow-tip, .arrow-tip2 {
+    display: none; }
+  .left-col, .right-col {
+    width: 100%;
+    display: block;
+    height: auto; }
+  .right-col {
+    height: 200px;
+    margin-left: 0; }
+  .left-col .skater-image:first-child, .left-col .skater-image:nth-child(2), .left-col .skater-image:nth-child(3), .right-col .skater-image:first-child {
+    width: 100%;
+    display: block;
+    margin-top: 2%; }
+  .left-col .skater-image:nth-child(2) {
+    margin-left: 0; }
+  .left-col .skater-image:nth-child(3) {
+    background-position-y: -20px; }
+  .right-col .skater-image:first-child {
+    background-size: 147%;
+    background-position-x: -175px; }
+  .skater-wrapper span {
+    animation-play-state: paused; }
+  .left-col .skater-image span {
+    padding: 15%; }
+  /*.left-col .skater-image:nth-child(2) {
+    width: 100%;
+  }*/
+  .skateboard-wrapper {
+    height: auto; }
+  footer {
+    height: auto; }
+  .footer-left-col {
+    width: 100%; }
+  .footer-right-col {
+    width: 100%; }
+  button {
+    margin-bottom: 5%; }
+  /******************* Closing Tage *******************/ }
+
+/****************************
+TABLET MEDIA QUERY
+*****************************/
+@media (min-width: 761px) and (max-width: 1250px) {
+  .content-container {
+    width: 66%; }
+  nav > ul > li {
+    width: 23.67%; }
+  nav a {
+    font-size: .63em; }
+  .news-story {
+    width: 28.6%;
+    padding: 1.7%; }
+  .left-col .skater-image:first-child {
+    width: 46.1%; } }
+
+/****************************
+DESKTOP MEDIA QUERY
+*****************************/
+@media screen and (min-width: 1251px) {
+  .content-container {
+    width: 49%;
+    margin: 0 auto; }
+  nav > ul > li {
+    width: 23.7%; }
+  /*.headlines {
+  text-align: center;
+}*/
+  .news-story {
+    width: 27.5%; }
+  .left-col .skater-image:first-child {
+    width: 47.5%; }
+  .left-col .skater-image:nth-child(2) {
+    width: 47.5%; }
+  /****************** CLOSING CURLY BRACE ********************/ }

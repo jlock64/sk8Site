@@ -1,0 +1,42 @@
+/*********************************
+SKATEBOARD STYLES
+**********************************/
+
+.skateboard-wrapper {
+  position: relative;
+  margin-top: 25px;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  background-color: #FDFDFD;
+  box-shadow: 0px 3px grey;
+}
+
+.skateboards {
+  display: inline-block;
+  padding-top: 2%;
+  /*padding-left: 1%;*/
+}
+
+.skateboards img {
+  width: 65%;
+}
+/*.skateboards img:hover {
+  transform: rotateX(45deg);
+}*/
+
+.skateboards img:hover {
+  animation-duration: .5s;
+  animation-name: grow;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1.0);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}

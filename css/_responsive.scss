@@ -1,4 +1,12 @@
-@media (min-width: 380px) and (max-width: 760px){
+// _responsive.scss
+
+
+
+
+/****************************
+MOBILE DEVICE MEDIA QUERY
+*****************************/
+@media (min-width: 0px) and (max-width: 760px){
 
   .content-container {
     width: 100%;
@@ -136,9 +144,69 @@ button {
   margin-bottom: 5%;
 }
 
-
-
-
-
 /******************* Closing Tage *******************/
+}
+
+
+/****************************
+TABLET MEDIA QUERY
+*****************************/
+@media (min-width: 761px) and (max-width: 1250px){
+
+  .content-container {
+    width: 66%;
+  }
+
+  nav > ul > li {
+    width: 23.67%;
+  }
+
+  nav a {
+    font-size: .63em;
+  }
+
+  .news-story {
+    width: 28.6%;
+    padding: 1.7%;
+  }
+
+  .left-col .skater-image:first-child {
+    width: 46.1%;
+  }
+
+}
+
+
+
+/****************************
+DESKTOP MEDIA QUERY
+*****************************/
+@media screen and (min-width: 1251px) {
+
+.content-container {
+  width: 49%;
+  margin: 0 auto;
+}
+
+nav > ul > li {
+  width: 23.7%;
+}
+
+/*.headlines {
+  text-align: center;
+}*/
+
+.news-story {
+  width: 27.5%;
+}
+
+.left-col .skater-image:first-child {
+  width: 47.5%;
+}
+
+.left-col .skater-image:nth-child(2) {
+  width: 47.5%;
+}
+
+  /****************** CLOSING CURLY BRACE ********************/
 }
