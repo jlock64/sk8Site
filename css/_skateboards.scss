@@ -15,22 +15,19 @@ SKATEBOARD STYLES
 .skateboards {
   display: inline-block;
   padding-top: 2%;
-  /*padding-left: 1%;*/
+
+  img {
+    width: 65%;
+  }
+
+  img:hover {
+    animation-duration: .5s;
+    animation-name: grow;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
 }
 
-.skateboards img {
-  width: 65%;
-}
-/*.skateboards img:hover {
-  transform: rotateX(45deg);
-}*/
-
-.skateboards img:hover {
-  animation-duration: .5s;
-  animation-name: grow;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
 
 @keyframes grow {
   from {

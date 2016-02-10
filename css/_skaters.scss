@@ -4,13 +4,21 @@ SKATER BIO STYLES
 
 .arrow {
   position: absolute;
-  background-color: #B4292E;
+  background-color: $primary-red;;
   width: 20%;
   height: 60px;
   top: 33px;
   left: -189px;
-  /*box-shadow: 0px 3px grey;*/
+  // box-shadow: 0px 3px grey;
   text-align: center;
+
+  p {
+    color: #f8f6f7;
+    text-transform: uppercase;
+    font-family: arial;
+    padding-top: 6px;
+    padding-left: 10px;
+  }
 }
 
 .arrow2 {
@@ -22,20 +30,13 @@ SKATER BIO STYLES
   left: -189px;
 }
 
-.arrow p {
-  color: #f8f6f7;
-  text-transform: uppercase;
-  font-family: arial;
-  padding-top: 6px;
-  padding-left: 10px;
-}
 
 .arrow-tip {
   position: absolute;
   width: 0;
   border-top: 31px solid transparent;
   border-bottom: 31px solid transparent;
-  border-left: 20px solid #B4292E;
+  border-left: 20px solid $primary-red;;
   top: 32px;
   left: -36px;
 }
@@ -74,11 +75,13 @@ SKATER BIO STYLES
 .skater-image {
   box-shadow: 0px 3px grey;
   transition: all .3s ease-in-out;
+
+  &:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
 }
-.skater-image:hover {
-  opacity: .7;
-  cursor: pointer;
-}
+
 
 .left-col .skater-image:first-child {
   position: relative;

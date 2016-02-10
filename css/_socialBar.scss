@@ -14,27 +14,28 @@ SOCIAL BAR STYLES
   display: inline-block;
   position: relative;
   bottom: 16px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #111;
+    font-size: 10px;
+  }
+  &a:hover {
+    text-decoration: underline;
+  }
+
+  span {
+    padding-left: 10px;
+    font-size: 5px;
+    color: #fff;
+    text-shadow: 1px 1px #111;
+    position: relative;
+    bottom: 2px;
+  }
 }
 
-.subscribe a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-shadow: 1px 1px #111;
-  font-size: 10px;
-}
-.subscribe a:hover {
-  text-decoration: underline;
-}
-
-.subscribe span {
-  padding-left: 10px;
-  font-size: 5px;
-  color: #fff;
-  text-shadow: 1px 1px #111;
-  position: relative;
-  bottom: 2px;
-}
 
 .vertical-dots {
   display: inline-block;;
@@ -49,23 +50,25 @@ SOCIAL BAR STYLES
 
 .social-wrapper {
   display: inline-block;
-}
-.social-wrapper ul {
+
+  ul {
     margin: 0;
     padding: 0;
-}
-.social-wrapper li {
-  width: 42px;
-  height: 40px;
-  display: inline-block;
-  box-shadow: 0px 3px grey;
+  }
 
-}
-.social-wrapper img {
-  width: 42px;
-  height: 42px;
-  transition: all .3s ease-in-out;
-}
-.social-wrapper img:hover {
-  opacity: .6;
+  li {
+    width: 42px;
+    height: 40px;
+    display: inline-block;
+    box-shadow: 0px 3px grey;
+   }
+
+  img {
+     width: 42px;
+     height: 42px;
+     transition: all .3s ease-in-out;
+   }
+   &img:hover {
+    opacity: .6;
+   }
 }

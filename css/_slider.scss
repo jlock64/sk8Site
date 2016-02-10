@@ -35,18 +35,19 @@
   font-size: 0;  /* This sucks all the air out of the div container surrounding the image*/
   text-align: left; /* Addressing a bug in Win Safari 5 */
   animation: 10s slide infinite;
-}
-#figure:hover {
-  animation-play-state: paused;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+
+  img {
+    width: 20%; /*100%/5 = 20%*/
+    height: auto;
+    float: left; /* Addressing a bug in Win Safari 5 */
+  }
 }
 
-#figure img {
-  width: 20%; /*100%/5 = 20%*/
-  height: auto;
-  float: left; /* Addressing a bug in Win Safari 5 */
-}
-
-
+/************* SLIDER ANIMATION ****************/
 @keyframes slide {
   0% { left: 0%; }
   20% { left: 0%; }
@@ -63,9 +64,10 @@
   position: absolute;
   top: 28px;
   left: 15px;
-}
-.logo-wrapper img {
-  width: 70%;
+
+  img {
+    width: 70%;
+  }
 }
 
 .slider-buttons {
@@ -75,10 +77,11 @@
   font-size: 12px;
   text-align: center;
   text-shadow: 0px 2px #888;
-}
-.slider-buttons span {
-  padding: 0px 4px;
-}
-.slider-buttons span:hover {
-  color: red;
+
+  span {
+    padding: 0px 4px;
+  }
+  &:hover {
+    color: red;
+  }
 }
