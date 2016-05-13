@@ -316,9 +316,7 @@ SKATER BIO STYLES
   width: 48%;
   height: 47%;
   border: 3px solid #fff;
-  background-size: 130%;
-  background-position-x: -65px;
-  background-position-y: -11px; }
+  background-size: 130%; }
 
 .left-col span {
   color: #fff;
@@ -336,8 +334,7 @@ SKATER BIO STYLES
   background-image: url(../images/sk8er-3.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 120%;
-  background-position-y: -16px;
+  background-size: cover;
   width: 47.8%;
   height: 47%;
   border: 3px solid #fff; }
@@ -348,7 +345,6 @@ SKATER BIO STYLES
   background-image: url(../images/sk8er-1.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -75px;
   width: 98.8%;
   height: 47%;
   border: 3px solid #fff; }
@@ -360,7 +356,6 @@ SKATER BIO STYLES
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 223%;
-  background-position-x: -232px;
   width: 99.2%;
   height: 99%;
   border: 3px solid #fff; }
@@ -554,12 +549,12 @@ NAV BAR
     display: block;
     margin-top: 2%; }
   .left-col .skater-image:nth-child(2) {
-    margin-left: 0; }
+    margin-left: 0;
+    background-size: cover; }
   .left-col .skater-image:nth-child(3) {
-    background-position-y: -20px; }
+    background-size: cover; }
   .right-col .skater-image:first-child {
-    background-size: 147%;
-    background-position-x: -175px; }
+    background-size: cover; }
   .skater-wrapper span {
     animation-play-state: paused; }
   .left-col .skater-image span {
@@ -595,6 +590,12 @@ TABLET MEDIA QUERY
   .left-col .skater-image:first-child {
     width: 46.1%; } }
 
+.right-col .skater-image:first-child {
+  background-size: cover; }
+
+.left-col .skater-image:first-child {
+  background-size: cover; }
+
 /****************************
 DESKTOP MEDIA QUERY
 *****************************/
@@ -613,4 +614,6 @@ DESKTOP MEDIA QUERY
     width: 47.5%; }
   .left-col .skater-image:nth-child(2) {
     width: 47.5%; }
+  div.skater-image {
+    background-size: cover; }
   /****************** CLOSING CURLY BRACE ********************/ }

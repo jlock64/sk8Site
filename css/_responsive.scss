@@ -103,15 +103,17 @@ NAV BAR
 
   .left-col .skater-image:nth-child(2) {
     margin-left: 0;
+    background-size: cover;
   }
 
   .left-col .skater-image:nth-child(3) {
-    background-position-y: -20px;
+    // background-position-y: -20px;
+    background-size: cover;
   }
 
   .right-col .skater-image:first-child {
-    background-size: 147%;
-    background-position-x: -175px;
+    background-size: cover;
+    // background-position-x: -175px;
   }
 
 .skater-wrapper span {
@@ -173,10 +175,15 @@ TABLET MEDIA QUERY
   .left-col .skater-image:first-child {
     width: 46.1%;
   }
-  .skater-image {
-    background-size: cover;
-  }
 
+}
+
+.right-col .skater-image:first-child {
+  background-size: cover;
+}
+
+.left-col .skater-image:first-child {
+  background-size: cover;
 }
 
 
@@ -210,6 +217,10 @@ nav > ul > li {
 .left-col .skater-image:nth-child(2) {
   width: 47.5%;
 }
+
+div.skater-image {
+    background-size: cover;
+  }
 
   /****************** CLOSING CURLY BRACE ********************/
 }
