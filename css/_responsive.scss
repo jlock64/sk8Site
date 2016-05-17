@@ -174,7 +174,11 @@ TABLET MEDIA QUERY
   }
 
   .left-col .skater-image:first-child {
-    width: 46.1%;
+    width: 47%;
+  }
+
+  .left-col .skater-image:nth-child(2) {
+    width: 47%;
   }
 
 }

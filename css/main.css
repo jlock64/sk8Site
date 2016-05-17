@@ -590,7 +590,9 @@ TABLET MEDIA QUERY
     height: 270px;
     padding: 1.7%; }
   .left-col .skater-image:first-child {
-    width: 46.1%; } }
+    width: 47%; }
+  .left-col .skater-image:nth-child(2) {
+    width: 47%; } }
 
 .right-col .skater-image:first-child {
   background-size: cover; }
