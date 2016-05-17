@@ -201,6 +201,7 @@ News Headline Styles
   /* use this rule whenver using inline-block  */
   display: inline-block;
   width: 28.6%;
+  height: 270px;
   padding: 15px;
   background-color: #fff;
   box-shadow: 0px 3px grey;
@@ -487,7 +488,7 @@ footer button {
 /****************************
 MOBILE DEVICE MEDIA QUERY
 *****************************/
-@media (min-width: 0px) and (max-width: 760px) {
+@media (min-width: 0px) and (max-width: 900px) {
   .content-container {
     width: 100%; }
   /****************************
@@ -577,7 +578,7 @@ NAV BAR
 /****************************
 TABLET MEDIA QUERY
 *****************************/
-@media (min-width: 761px) and (max-width: 1250px) {
+@media (min-width: 901px) and (max-width: 1250px) {
   .content-container {
     width: 66%; }
   nav > ul > li {
@@ -586,6 +587,7 @@ TABLET MEDIA QUERY
     font-size: .63em; }
   .news-story {
     width: 28.6%;
+    height: 270px;
     padding: 1.7%; }
   .left-col .skater-image:first-child {
     width: 46.1%; } }
@@ -595,6 +597,9 @@ TABLET MEDIA QUERY
 
 .left-col .skater-image:first-child {
   background-size: cover; }
+
+div.skateboards {
+  margin-left: -8px; }
 
 /****************************
 DESKTOP MEDIA QUERY
@@ -609,7 +614,8 @@ DESKTOP MEDIA QUERY
   text-align: center;
 }*/
   .news-story {
-    width: 27.5%; }
+    width: 27.0%;
+    height: 270px; }
   .left-col .skater-image:first-child {
     width: 47.5%; }
   .left-col .skater-image:nth-child(2) {
